@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -11,17 +11,25 @@ export default function Contact() {
   const { toast } = useToast();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
       toast({ title: "Please fill all fields", variant: "destructive" });
       return;
     }
+
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
       toast({ title: "Please enter a valid email", variant: "destructive" });
       return;
     }
-    toast({ title: "Message sent!", description: "Thanks for reaching out. I'll get back to you soon." });
+
+    const mailto = `mailto:avinashkk4545@gmail.com?subject=${encodeURIComponent(
+      `Contact from ${form.name}`
+    )}&body=${encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)}`;
+
+    window.location.href = mailto;
+    toast({ title: "Message ready to send", description: "Your default mail client will open so you can finalize and send the message." });
     setForm({ name: "", email: "", message: "" });
   };
 
