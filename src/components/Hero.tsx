@@ -47,7 +47,7 @@ export default function Hero() {
           </span>
         </div>
         <p className="text-muted-foreground text-base md:text-lg mb-10 max-w-xl mx-auto leading-relaxed">
-          Building scalable web solutions with clean code and modern technologies
+          Building intelligent software that solves real-world problems with Java, MERN, and AI
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Button
@@ -63,7 +63,7 @@ export default function Hero() {
             </a>
           </Button>
           <Button variant="secondary" size="lg" className="gap-2">
-            <a href="https://drive.google.com/file/d/16nlBREvcN3rcQxr3GEetwYTY9NPnVLmb/view" target="_blank" rel="noopener noreferrer"> 
+            <a href="https://drive.google.com/file/d/1a7LevWZbuUcTuRf4N58GNJuBb1BqMveQ/view?usp=sharing" target="_blank" rel="noopener noreferrer"> 
             <FileDown className="h-4 w-4" /> Resume
             </a>
           </Button>

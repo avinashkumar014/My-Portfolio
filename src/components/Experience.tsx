@@ -44,7 +44,7 @@ export default function Experience() {
               <div>
                 <h3 className="text-lg font-bold text-foreground">B.Tech – Information Technology</h3>
                 <p className="text-primary font-medium text-sm">Bundelkhand Institute of Engineering & Technology, Jhansi</p>
-                <p className="text-muted-foreground text-xs mt-1 mb-3">2022 – 2026 • CGPA: 7.62</p>
+                <p className="text-muted-foreground text-xs mt-1 mb-3">2022 – 2026 • CGPA: 7.72</p>
                 <div className="flex flex-wrap gap-2">
                   {["DSA", "Operating Systems", "DBMS", "Computer Networks", "Software Engineering"].map((c) => (
                     <span key={c} className="text-xs bg-secondary text-muted-foreground px-2.5 py-1 rounded-full">

@@ -2,8 +2,8 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Code2, Layers, Trophy } from "lucide-react";
 
 const stats = [
-  { icon: Code2, label: "DSA Problems", value: "800+" },
-  { icon: Layers, label: "Projects Built", value: "14+" },
+  { icon: Code2, label: "DSA Problems", value: "1000+" },
+  { icon: Layers, label: "Projects Built", value: "20+" },
   { icon: Trophy, label: "Expertise", value: "MERN Stack" },
 ];
 
@@ -39,14 +39,19 @@ export default function About() {
 
           <div>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              I'm a final-year B.Tech Information Technology student at BIET Jhansi with a passion for building
-              full-stack web applications. I specialize in the MERN stack and love solving complex problems —
-              having tackled 600+ DSA challenges on LeetCode and GeeksforGeeks.
+              I'm a B.Tech graduate in Information Technology from BIET Jhansi with a strong foundation in
+              Java, Data Structures & Algorithms, and full-stack web development. I specialize in building
+              scalable and user-focused web applications using the MERN stack and enjoy solving complex
+              problems, having solved 1000+ DSA problems across LeetCode and GeeksforGeeks.
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-8">
-              With hands-on experience in React, Node.js, Express, MongoDB, and TypeScript, I focus on writing
-              clean, maintainable code and delivering impactful, user-centric solutions.
-            </p>
+
+           <p className="text-muted-foreground leading-relaxed mb-8">
+              With hands-on experience in React.js, Node.js, Express.js, MongoDB, REST APIs, and AI
+              integrations, I focus on writing clean, maintainable code and developing practical solutions
+              that deliver a seamless user experience. I'm passionate about continuous learning and
+              building impactful software products.
+           </p>
+
 
             <div className="grid grid-cols-3 gap-4">
               {stats.map((s) => (

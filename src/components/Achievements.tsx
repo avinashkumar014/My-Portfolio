@@ -4,7 +4,7 @@ import { Award, Code2, Users } from "lucide-react";
 const achievements = [
   {
     icon: Code2,
-    title: "800+ DSA Problems Solved",
+    title: "1000+ DSA Problems Solved",
     desc: "Consistent problem-solving on LeetCode and GeeksforGeeks across arrays, trees, graphs, and dynamic programming.",
   },
   {
